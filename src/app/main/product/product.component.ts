@@ -58,6 +58,7 @@ export class ProductComponent implements OnInit {
   }
 
   public deleteProduct(id: number): void {
+    console.log(id);
     if (confirm("Delete this Product?")) {
       this.dataService.deleteProduct(id).subscribe(response => {
         this.data.splice(id, 1);

@@ -12,7 +12,7 @@ constructor(private authService:authService){
     }
 
     intercept(req: HttpRequest<any>, next: HttpHandler){
-        // console.log("Request is on way.");
+        console.log("Request is on way.");
         this.authService.userSub.subscribe();
             return this.authService.userSub.pipe(
                 take(1),
