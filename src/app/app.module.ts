@@ -22,8 +22,7 @@ import { authIntercepterService } from './services/authIntercepter.service';
     SharedModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule,
-
+    BrowserAnimationsModule
   ],
   providers: [
     {

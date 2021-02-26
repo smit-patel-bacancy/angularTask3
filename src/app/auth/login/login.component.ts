@@ -17,7 +17,9 @@ export class LoginComponent implements OnInit {
   public isError: boolean=false;
   public errorMsg: string=null;
 
-  constructor(private router: Router, private authService: authService) { }
+  constructor(private router: Router, private authService: authService) {
+    console.log("Auth called.");
+   }
 
   ngOnInit(): void {
   }
@@ -56,7 +58,7 @@ export class LoginComponent implements OnInit {
         response =>{
           console.log(response);
           this.isLoading=false;
-          this.router.navigateByUrl('/');
+          // this.router.navigateByUrl('/');
         },
         error=>{
           console.log(error);

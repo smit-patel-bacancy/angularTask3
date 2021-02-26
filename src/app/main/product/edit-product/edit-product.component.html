@@ -61,7 +61,7 @@
     <br><br>
 
     <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6" style="text-align: right">
-        <br><button class="btn btn-secondary" (click)="onSubmit()">Submit</button>
+        <br><button class="btn btn-secondary" (click)="onSubmit()" [disabled]="!productDetails.productId && !productDetails.productName && !productDetails.productPrice && !productDetails.productDescription && !productDetails.productCategory">Submit</button>
     </div>
 
     <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6">

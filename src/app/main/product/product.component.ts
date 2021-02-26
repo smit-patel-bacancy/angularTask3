@@ -40,7 +40,7 @@ export class ProductComponent implements OnInit {
         });
       }
       this.dataService.data = this.data;
-      // console.log("service data :::"+ this.data);
+      console.log("service data :::"+ this.data);
     }, error => {
       this.isError = true;
       this.errorMsg = error.message;

@@ -6,15 +6,13 @@ import { SharedModule } from 'src/app/core/loading-spinner/shared.module';
 import { FormsModule } from '@angular/forms';
 import { authGuard } from 'src/app/guards/auth.guard';
 
-
-
 @NgModule({
   declarations: [CartComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
-        path:'',component:CartComponent, canActivate:[authGuard]
+        path:'',component:CartComponent
       }
     ]),
     SharedModule,
